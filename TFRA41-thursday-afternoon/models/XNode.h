@@ -9,7 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 
 #define NAME_NODE "xnode"
-#define SIZE_NODE 8
+#define SIZE_NODE 4
 
 @interface XNode : SKShapeNode
 

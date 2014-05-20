@@ -24,7 +24,6 @@
         self.name = @NAME_NODE;
         self.strokeColor = [XColors predefinedColor:XColorYellow];
         self.fillColor = [XColors predefinedColor:XColorYellow];
-        self.glowWidth = SIZE_NODE / 2;
         self.alpha = 0;
         
         [self runAction:[SKAction fadeAlphaTo:1 duration:1]];
@@ -55,7 +54,7 @@
     
     float randomizedAlpha = ((arc4random() % (int)((ALPHA_MAX - ALPHA_MIN) * 100)) + (ALPHA_MIN * 100.0)) / 100.0;
     NSInteger radius = SIZE_NODE * randomizedAlpha;
-    float newScale = randomizedAlpha * 2.0;
+    float newScale = randomizedAlpha;
     
     [self runAction:[SKAction group:@[
                                       [SKAction fadeAlphaTo:randomizedAlpha duration:3.0],
@@ -63,7 +62,7 @@
                                       [SKAction colorizeWithColor:[UIColor whiteColor] colorBlendFactor:1 duration:3.0]
                                       ]]];
     //self.radius = radius;
-    self.glowWidth = radius;
+    self.glowWidth = SIZE_NODE / radius;
     
 }
 
