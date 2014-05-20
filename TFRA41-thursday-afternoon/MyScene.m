@@ -17,11 +17,15 @@
     
     if (self) {
         
-        self.backgroundColor = [XColors predefinedColor:XColorBlue];
+        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"background"];
+        background.position = (CGPoint) {CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)};
+        [self addChild:background];
+        
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:[self frame]];
         [self.physicsWorld setGravity:CGVectorMake(0, 0)];
         
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timerLoop) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timerLoop) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(resizeLoop) userInfo:nil repeats:YES];
         
     }
     
@@ -52,6 +56,17 @@
         [self spawnNodeAt:CGPointMake(arc4random() % (int)self.frame.size.width, arc4random() % (int)self.frame.size.height)];
         
     }
+    
+}
+
+- (void)resizeLoop {
+    
+    [self.nodes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        XNode *node = obj;
+        [node randomizeDepth];
+        
+    }];
     
 }
 
