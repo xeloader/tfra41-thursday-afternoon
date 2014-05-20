@@ -7,47 +7,119 @@
 //
 
 #import "MyScene.h"
+#import "XColors.h"
 
 @implementation MyScene
 
--(id)initWithSize:(CGSize)size {    
-    if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
+- (id)initWithSize:(CGSize)size {
+    
+    self = [super initWithSize:size];
+    
+    if (self) {
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        self.backgroundColor = [XColors predefinedColor:XColorBlue];
+        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:[self frame]];
+        [self.physicsWorld setGravity:CGVectorMake(0, 0)];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timerLoop) userInfo:nil repeats:YES];
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
     }
+    
     return self;
+    
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
+- (void)timerLoop {
+    
+    //move the nodes and make it sweet-ah.
+    
+    [self.nodes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        XNode *node = obj;
+            
+        [node move];
+        
+        if(![node hasActions]) {
+        
+            [node randomizeDepth];
+            
+        }
+        
+    }];
+    
+    if(arc4random() % 100 > 65) {
+        
+        [self spawnNodeAt:CGPointMake(arc4random() % (int)self.frame.size.width, arc4random() % (int)self.frame.size.height)];
+        
+    }
+    
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     for (UITouch *touch in touches) {
+        
         CGPoint location = [touch locationInNode:self];
+        [self spawnNodeAt:location];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
     }
+    
 }
 
--(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+- (void)spawnNodeAt:(CGPoint)point {
+    
+    XNode *node = [[XNode alloc] initWithRadius:16];
+    node.position = point;
+    
+    [self.nodes addObject:node];
+    [self addChild:node];
+    
+}
+
+- (void)update:(CFTimeInterval)currentTime {
+    
+    [self updateGravity];
+    
+}
+
+- (void)updateGravity {
+    
+    CMAccelerometerData *data = [self.motionManager accelerometerData];
+    
+    if(data) {
+        
+        double x = data.acceleration.x * 0.25;
+        double y = data.acceleration.y * 0;
+        
+        [self.physicsWorld setGravity:CGVectorMake(x, y)];
+        
+    }
+    
+}
+
+- (CMMotionManager *)motionManager {
+    
+    if(!_motionManager) {
+        
+        _motionManager = [[CMMotionManager alloc] init];
+        [_motionManager startAccelerometerUpdates];
+        
+    }
+    
+    return _motionManager;
+    
+}
+
+- (NSMutableArray *)nodes {
+    
+    if(!_nodes) {
+        
+        _nodes = [[NSMutableArray alloc] init];
+        
+    }
+    
+    return _nodes;
+    
 }
 
 @end

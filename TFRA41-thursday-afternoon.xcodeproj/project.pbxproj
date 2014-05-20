@@ -17,13 +17,14 @@
 		577D86BE192B540D00CA966E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577D86BC192B540D00CA966E /* Main.storyboard */; };
 		577D86C1192B540D00CA966E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86C0192B540D00CA966E /* ViewController.m */; };
 		577D86C4192B540D00CA966E /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86C3192B540D00CA966E /* MyScene.m */; };
-		577D86C6192B540D00CA966E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 577D86C5192B540D00CA966E /* Spaceship.png */; };
 		577D86C8192B540D00CA966E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577D86C7192B540D00CA966E /* Images.xcassets */; };
 		577D86CF192B540D00CA966E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86CE192B540D00CA966E /* XCTest.framework */; };
 		577D86D0192B540D00CA966E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86A8192B540D00CA966E /* Foundation.framework */; };
 		577D86D1192B540D00CA966E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86AC192B540D00CA966E /* UIKit.framework */; };
 		577D86D9192B540D00CA966E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 577D86D7192B540D00CA966E /* InfoPlist.strings */; };
 		577D86DB192B540E00CA966E /* TFRA41_thursday_afternoonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86DA192B540E00CA966E /* TFRA41_thursday_afternoonTests.m */; };
+		577D86E7192B56E700CA966E /* XNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86E6192B56E700CA966E /* XNode.m */; };
+		577D86EA192B63B200CA966E /* XColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86E9192B63B200CA966E /* XColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +54,16 @@
 		577D86C0192B540D00CA966E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		577D86C2192B540D00CA966E /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		577D86C3192B540D00CA966E /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
-		577D86C5192B540D00CA966E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		577D86C7192B540D00CA966E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		577D86CD192B540D00CA966E /* TFRA41-thursday-afternoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TFRA41-thursday-afternoonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		577D86CE192B540D00CA966E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		577D86D6192B540D00CA966E /* TFRA41-thursday-afternoonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TFRA41-thursday-afternoonTests-Info.plist"; sourceTree = "<group>"; };
 		577D86D8192B540D00CA966E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		577D86DA192B540E00CA966E /* TFRA41_thursday_afternoonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRA41_thursday_afternoonTests.m; sourceTree = "<group>"; };
+		577D86E5192B56E700CA966E /* XNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XNode.h; path = models/XNode.h; sourceTree = "<group>"; };
+		577D86E6192B56E700CA966E /* XNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XNode.m; path = models/XNode.m; sourceTree = "<group>"; };
+		577D86E8192B63B200CA966E /* XColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XColors.h; path = models/XColors.h; sourceTree = "<group>"; };
+		577D86E9192B63B200CA966E /* XColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XColors.m; path = models/XColors.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +125,12 @@
 		577D86B0192B540D00CA966E /* TFRA41-thursday-afternoon */ = {
 			isa = PBXGroup;
 			children = (
-				577D86B9192B540D00CA966E /* AppDelegate.h */,
-				577D86BA192B540D00CA966E /* AppDelegate.m */,
+				577D86E4192B565B00CA966E /* models */,
 				577D86BC192B540D00CA966E /* Main.storyboard */,
 				577D86BF192B540D00CA966E /* ViewController.h */,
 				577D86C0192B540D00CA966E /* ViewController.m */,
 				577D86C2192B540D00CA966E /* MyScene.h */,
 				577D86C3192B540D00CA966E /* MyScene.m */,
-				577D86C5192B540D00CA966E /* Spaceship.png */,
 				577D86C7192B540D00CA966E /* Images.xcassets */,
 				577D86B1192B540D00CA966E /* Supporting Files */,
 			);
@@ -138,6 +140,8 @@
 		577D86B1192B540D00CA966E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				577D86B9192B540D00CA966E /* AppDelegate.h */,
+				577D86BA192B540D00CA966E /* AppDelegate.m */,
 				577D86B2192B540D00CA966E /* TFRA41-thursday-afternoon-Info.plist */,
 				577D86B3192B540D00CA966E /* InfoPlist.strings */,
 				577D86B6192B540D00CA966E /* main.m */,
@@ -162,6 +166,17 @@
 				577D86D7192B540D00CA966E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		577D86E4192B565B00CA966E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				577D86E5192B56E700CA966E /* XNode.h */,
+				577D86E6192B56E700CA966E /* XNode.m */,
+				577D86E8192B63B200CA966E /* XColors.h */,
+				577D86E9192B63B200CA966E /* XColors.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +226,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Victor Ingman";
 				TargetAttributes = {
+					577D86A4192B540D00CA966E = {
+						DevelopmentTeam = 3R7ERELMNH;
+					};
 					577D86CC192B540D00CA966E = {
 						TestTargetID = 577D86A4192B540D00CA966E;
 					};
@@ -242,7 +260,6 @@
 			files = (
 				577D86B5192B540D00CA966E /* InfoPlist.strings in Resources */,
 				577D86C8192B540D00CA966E /* Images.xcassets in Resources */,
-				577D86C6192B540D00CA966E /* Spaceship.png in Resources */,
 				577D86BE192B540D00CA966E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				577D86C4192B540D00CA966E /* MyScene.m in Sources */,
+				577D86E7192B56E700CA966E /* XNode.m in Sources */,
+				577D86EA192B63B200CA966E /* XColors.m in Sources */,
 				577D86C1192B540D00CA966E /* ViewController.m in Sources */,
 				577D86BB192B540D00CA966E /* AppDelegate.m in Sources */,
 				577D86B7192B540D00CA966E /* main.m in Sources */,
@@ -390,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Prefix.pch";
 				INFOPLIST_FILE = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Info.plist";
@@ -404,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Prefix.pch";
 				INFOPLIST_FILE = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Info.plist";
