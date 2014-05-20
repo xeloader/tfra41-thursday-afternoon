@@ -25,6 +25,9 @@
         self.strokeColor = [XColors predefinedColor:XColorYellow];
         self.fillColor = [XColors predefinedColor:XColorYellow];
         self.glowWidth = SIZE_NODE / 2;
+        self.alpha = 0;
+        
+        [self runAction:[SKAction fadeAlphaTo:1 duration:1]];
         
     }
     
@@ -56,10 +59,21 @@
     
     [self runAction:[SKAction group:@[
                                       [SKAction fadeAlphaTo:randomizedAlpha duration:3.0],
-                                      [SKAction scaleTo:newScale duration:newScale * 3.0],
+                                      [SKAction scaleTo:newScale duration:3.0],
+                                      [SKAction colorizeWithColor:[UIColor whiteColor] colorBlendFactor:1 duration:3.0]
                                       ]]];
-    self.radius = radius;
-    self.glowWidth = radius / 2;
+    //self.radius = radius;
+    self.glowWidth = radius;
+    
+}
+
+- (void)kill {
+    
+    [self runAction:[SKAction fadeAlphaTo:0 duration:5.0] completion:^{
+       
+        [self removeFromParent];
+        
+    }];
     
 }
 

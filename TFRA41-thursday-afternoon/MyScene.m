@@ -9,6 +9,8 @@
 #import "MyScene.h"
 #import "XColors.h"
 
+#define SPAWN_MAXIMUM 10
+
 @implementation MyScene
 
 - (id)initWithSize:(CGSize)size {
@@ -26,6 +28,8 @@
         
         [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timerLoop) userInfo:nil repeats:YES];
         [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(resizeLoop) userInfo:nil repeats:YES];
+        
+        [self spawnNodes];
         
     }
     
@@ -53,9 +57,15 @@
     
     if(arc4random() % 100 > 65) {
         
-        [self spawnNodeAt:CGPointMake(arc4random() % (int)self.frame.size.width, arc4random() % (int)self.frame.size.height)];
+        [self spawnNodeAt:[self randomScenePoint]];
         
     }
+    
+}
+
+- (CGPoint)randomScenePoint {
+    
+    return CGPointMake(arc4random() % (int)self.frame.size.width, arc4random() % (int)self.frame.size.height);
     
 }
 
@@ -64,9 +74,29 @@
     [self.nodes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         
         XNode *node = obj;
-        [node randomizeDepth];
+        if(arc4random() % 100 > 25) {
+            [node randomizeDepth];
+        } else {
+            [node kill];
+        }
         
     }];
+    
+    [self spawnNodes];
+    
+}
+
+- (void)spawnNodes {
+    
+    for(NSInteger index = 0; index < 25; index++) {
+        
+        if(arc4random() % 10 < 2) {
+        
+            [self spawnNodeAt:[self randomScenePoint]];
+            
+        }
+        
+    }
     
 }
 

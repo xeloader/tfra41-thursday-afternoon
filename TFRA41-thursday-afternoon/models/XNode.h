@@ -19,5 +19,6 @@
 
 - (void)randomizeDepth;
 - (void)move;
+- (void)kill;
 
 @end
