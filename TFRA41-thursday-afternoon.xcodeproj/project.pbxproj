@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		577D86A9192B540D00CA966E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86A8192B540D00CA966E /* Foundation.framework */; };
+		577D86AB192B540D00CA966E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86AA192B540D00CA966E /* CoreGraphics.framework */; };
+		577D86AD192B540D00CA966E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86AC192B540D00CA966E /* UIKit.framework */; };
+		577D86AF192B540D00CA966E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86AE192B540D00CA966E /* SpriteKit.framework */; };
+		577D86B5192B540D00CA966E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 577D86B3192B540D00CA966E /* InfoPlist.strings */; };
+		577D86B7192B540D00CA966E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86B6192B540D00CA966E /* main.m */; };
+		577D86BB192B540D00CA966E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86BA192B540D00CA966E /* AppDelegate.m */; };
+		577D86BE192B540D00CA966E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577D86BC192B540D00CA966E /* Main.storyboard */; };
+		577D86C1192B540D00CA966E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86C0192B540D00CA966E /* ViewController.m */; };
+		577D86C4192B540D00CA966E /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86C3192B540D00CA966E /* MyScene.m */; };
+		577D86C6192B540D00CA966E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 577D86C5192B540D00CA966E /* Spaceship.png */; };
+		577D86C8192B540D00CA966E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577D86C7192B540D00CA966E /* Images.xcassets */; };
+		577D86CF192B540D00CA966E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86CE192B540D00CA966E /* XCTest.framework */; };
+		577D86D0192B540D00CA966E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86A8192B540D00CA966E /* Foundation.framework */; };
+		577D86D1192B540D00CA966E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D86AC192B540D00CA966E /* UIKit.framework */; };
+		577D86D9192B540D00CA966E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 577D86D7192B540D00CA966E /* InfoPlist.strings */; };
+		577D86DB192B540E00CA966E /* TFRA41_thursday_afternoonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D86DA192B540E00CA966E /* TFRA41_thursday_afternoonTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		577D86D2192B540D00CA966E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 577D869D192B540D00CA966E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 577D86A4192B540D00CA966E;
+			remoteInfo = "TFRA41-thursday-afternoon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		577D86A5192B540D00CA966E /* TFRA41-thursday-afternoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TFRA41-thursday-afternoon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		577D86A8192B540D00CA966E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		577D86AA192B540D00CA966E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		577D86AC192B540D00CA966E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		577D86AE192B540D00CA966E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		577D86B2192B540D00CA966E /* TFRA41-thursday-afternoon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TFRA41-thursday-afternoon-Info.plist"; sourceTree = "<group>"; };
+		577D86B4192B540D00CA966E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		577D86B6192B540D00CA966E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		577D86B8192B540D00CA966E /* TFRA41-thursday-afternoon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFRA41-thursday-afternoon-Prefix.pch"; sourceTree = "<group>"; };
+		577D86B9192B540D00CA966E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		577D86BA192B540D00CA966E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		577D86BD192B540D00CA966E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		577D86BF192B540D00CA966E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		577D86C0192B540D00CA966E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		577D86C2192B540D00CA966E /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		577D86C3192B540D00CA966E /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		577D86C5192B540D00CA966E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		577D86C7192B540D00CA966E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		577D86CD192B540D00CA966E /* TFRA41-thursday-afternoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TFRA41-thursday-afternoonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		577D86CE192B540D00CA966E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		577D86D6192B540D00CA966E /* TFRA41-thursday-afternoonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TFRA41-thursday-afternoonTests-Info.plist"; sourceTree = "<group>"; };
+		577D86D8192B540D00CA966E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		577D86DA192B540E00CA966E /* TFRA41_thursday_afternoonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFRA41_thursday_afternoonTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		577D86A2192B540D00CA966E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577D86AB192B540D00CA966E /* CoreGraphics.framework in Frameworks */,
+				577D86AD192B540D00CA966E /* UIKit.framework in Frameworks */,
+				577D86AF192B540D00CA966E /* SpriteKit.framework in Frameworks */,
+				577D86A9192B540D00CA966E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577D86CA192B540D00CA966E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577D86CF192B540D00CA966E /* XCTest.framework in Frameworks */,
+				577D86D1192B540D00CA966E /* UIKit.framework in Frameworks */,
+				577D86D0192B540D00CA966E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		577D869C192B540D00CA966E = {
+			isa = PBXGroup;
+			children = (
+				577D86B0192B540D00CA966E /* TFRA41-thursday-afternoon */,
+				577D86D4192B540D00CA966E /* TFRA41-thursday-afternoonTests */,
+				577D86A7192B540D00CA966E /* Frameworks */,
+				577D86A6192B540D00CA966E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		577D86A6192B540D00CA966E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				577D86A5192B540D00CA966E /* TFRA41-thursday-afternoon.app */,
+				577D86CD192B540D00CA966E /* TFRA41-thursday-afternoonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		577D86A7192B540D00CA966E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				577D86A8192B540D00CA966E /* Foundation.framework */,
+				577D86AA192B540D00CA966E /* CoreGraphics.framework */,
+				577D86AC192B540D00CA966E /* UIKit.framework */,
+				577D86AE192B540D00CA966E /* SpriteKit.framework */,
+				577D86CE192B540D00CA966E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		577D86B0192B540D00CA966E /* TFRA41-thursday-afternoon */ = {
+			isa = PBXGroup;
+			children = (
+				577D86B9192B540D00CA966E /* AppDelegate.h */,
+				577D86BA192B540D00CA966E /* AppDelegate.m */,
+				577D86BC192B540D00CA966E /* Main.storyboard */,
+				577D86BF192B540D00CA966E /* ViewController.h */,
+				577D86C0192B540D00CA966E /* ViewController.m */,
+				577D86C2192B540D00CA966E /* MyScene.h */,
+				577D86C3192B540D00CA966E /* MyScene.m */,
+				577D86C5192B540D00CA966E /* Spaceship.png */,
+				577D86C7192B540D00CA966E /* Images.xcassets */,
+				577D86B1192B540D00CA966E /* Supporting Files */,
+			);
+			path = "TFRA41-thursday-afternoon";
+			sourceTree = "<group>";
+		};
+		577D86B1192B540D00CA966E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				577D86B2192B540D00CA966E /* TFRA41-thursday-afternoon-Info.plist */,
+				577D86B3192B540D00CA966E /* InfoPlist.strings */,
+				577D86B6192B540D00CA966E /* main.m */,
+				577D86B8192B540D00CA966E /* TFRA41-thursday-afternoon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		577D86D4192B540D00CA966E /* TFRA41-thursday-afternoonTests */ = {
+			isa = PBXGroup;
+			children = (
+				577D86DA192B540E00CA966E /* TFRA41_thursday_afternoonTests.m */,
+				577D86D5192B540D00CA966E /* Supporting Files */,
+			);
+			path = "TFRA41-thursday-afternoonTests";
+			sourceTree = "<group>";
+		};
+		577D86D5192B540D00CA966E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				577D86D6192B540D00CA966E /* TFRA41-thursday-afternoonTests-Info.plist */,
+				577D86D7192B540D00CA966E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		577D86A4192B540D00CA966E /* TFRA41-thursday-afternoon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577D86DE192B540E00CA966E /* Build configuration list for PBXNativeTarget "TFRA41-thursday-afternoon" */;
+			buildPhases = (
+				577D86A1192B540D00CA966E /* Sources */,
+				577D86A2192B540D00CA966E /* Frameworks */,
+				577D86A3192B540D00CA966E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TFRA41-thursday-afternoon";
+			productName = "TFRA41-thursday-afternoon";
+			productReference = 577D86A5192B540D00CA966E /* TFRA41-thursday-afternoon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		577D86CC192B540D00CA966E /* TFRA41-thursday-afternoonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577D86E1192B540E00CA966E /* Build configuration list for PBXNativeTarget "TFRA41-thursday-afternoonTests" */;
+			buildPhases = (
+				577D86C9192B540D00CA966E /* Sources */,
+				577D86CA192B540D00CA966E /* Frameworks */,
+				577D86CB192B540D00CA966E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				577D86D3192B540D00CA966E /* PBXTargetDependency */,
+			);
+			name = "TFRA41-thursday-afternoonTests";
+			productName = "TFRA41-thursday-afternoonTests";
+			productReference = 577D86CD192B540D00CA966E /* TFRA41-thursday-afternoonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		577D869D192B540D00CA966E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Victor Ingman";
+				TargetAttributes = {
+					577D86CC192B540D00CA966E = {
+						TestTargetID = 577D86A4192B540D00CA966E;
+					};
+				};
+			};
+			buildConfigurationList = 577D86A0192B540D00CA966E /* Build configuration list for PBXProject "TFRA41-thursday-afternoon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 577D869C192B540D00CA966E;
+			productRefGroup = 577D86A6192B540D00CA966E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				577D86A4192B540D00CA966E /* TFRA41-thursday-afternoon */,
+				577D86CC192B540D00CA966E /* TFRA41-thursday-afternoonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		577D86A3192B540D00CA966E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577D86B5192B540D00CA966E /* InfoPlist.strings in Resources */,
+				577D86C8192B540D00CA966E /* Images.xcassets in Resources */,
+				577D86C6192B540D00CA966E /* Spaceship.png in Resources */,
+				577D86BE192B540D00CA966E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577D86CB192B540D00CA966E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577D86D9192B540D00CA966E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		577D86A1192B540D00CA966E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577D86C4192B540D00CA966E /* MyScene.m in Sources */,
+				577D86C1192B540D00CA966E /* ViewController.m in Sources */,
+				577D86BB192B540D00CA966E /* AppDelegate.m in Sources */,
+				577D86B7192B540D00CA966E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577D86C9192B540D00CA966E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577D86DB192B540E00CA966E /* TFRA41_thursday_afternoonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		577D86D3192B540D00CA966E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 577D86A4192B540D00CA966E /* TFRA41-thursday-afternoon */;
+			targetProxy = 577D86D2192B540D00CA966E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		577D86B3192B540D00CA966E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577D86B4192B540D00CA966E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		577D86BC192B540D00CA966E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577D86BD192B540D00CA966E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		577D86D7192B540D00CA966E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577D86D8192B540D00CA966E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		577D86DC192B540E00CA966E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		577D86DD192B540E00CA966E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		577D86DF192B540E00CA966E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Prefix.pch";
+				INFOPLIST_FILE = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		577D86E0192B540E00CA966E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Prefix.pch";
+				INFOPLIST_FILE = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		577D86E2192B540E00CA966E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TFRA41-thursday-afternoon.app/TFRA41-thursday-afternoon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TFRA41-thursday-afternoonTests/TFRA41-thursday-afternoonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		577D86E3192B540E00CA966E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TFRA41-thursday-afternoon.app/TFRA41-thursday-afternoon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TFRA41-thursday-afternoon/TFRA41-thursday-afternoon-Prefix.pch";
+				INFOPLIST_FILE = "TFRA41-thursday-afternoonTests/TFRA41-thursday-afternoonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		577D86A0192B540D00CA966E /* Build configuration list for PBXProject "TFRA41-thursday-afternoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577D86DC192B540E00CA966E /* Debug */,
+				577D86DD192B540E00CA966E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577D86DE192B540E00CA966E /* Build configuration list for PBXNativeTarget "TFRA41-thursday-afternoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577D86DF192B540E00CA966E /* Debug */,
+				577D86E0192B540E00CA966E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		577D86E1192B540E00CA966E /* Build configuration list for PBXNativeTarget "TFRA41-thursday-afternoonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577D86E2192B540E00CA966E /* Debug */,
+				577D86E3192B540E00CA966E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 577D869D192B540D00CA966E /* Project object */;
+}
