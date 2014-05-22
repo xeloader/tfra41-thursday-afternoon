@@ -11,7 +11,8 @@
 typedef enum {
     
     XColorBlue = 1,
-    XColorYellow = 2
+    XColorYellow = 2,
+    XColorPaper = 3
     
 } XColor;
 

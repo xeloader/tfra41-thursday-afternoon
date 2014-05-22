@@ -10,6 +10,7 @@
 #import "XColors.h"
 
 #define SPAWN_MAXIMUM 10
+#define SPAWN_START 25
 
 @implementation MyScene
 
@@ -19,9 +20,10 @@
     
     if (self) {
         
-        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"background"];
-        background.position = (CGPoint) {CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)};
-        [self addChild:background];
+//        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"background"];
+//        background.position = (CGPoint) {CGRectGetMidX(self.frame), CGRectGetMidY(self.frame)};
+//        [self addChild:background];
+        [self setBackgroundColor:[XColors predefinedColor:XColorPaper]];
         
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:[self frame]];
         [self.physicsWorld setGravity:CGVectorMake(0, 0)];
@@ -88,9 +90,9 @@
 
 - (void)spawnNodes {
     
-    for(NSInteger index = 0; index < 25; index++) {
+    for(NSInteger index = 0; index < SPAWN_START; index++) {
         
-        if(arc4random() % 10 < 2) {
+        if(arc4random() % 10 < 3) {
         
             [self spawnNodeAt:[self randomScenePoint]];
             
@@ -102,10 +104,18 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
+    if([touches count] > 3) {
+        
+        [self removeAllChildren];
+        
+    } else {
+    
     for (UITouch *touch in touches) {
         
         CGPoint location = [touch locationInNode:self];
         [self spawnNodeAt:location];
+        
+    }
         
     }
     

@@ -29,9 +29,20 @@
             
         case XColorYellow:
             
-            red = 255.0;
-            green = 252.0;
-            blue = 1.0;
+//            red = 255.0;
+//            green = 252.0;
+//            blue = 1.0;
+            red = 0;
+            green = 0;
+            blue = 0;
+            
+            break;
+            
+        case XColorPaper:
+            
+            red = 255;
+            green = 249;
+            blue = 220;
             
             break;
             
