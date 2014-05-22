@@ -10,7 +10,7 @@
 #import "XColors.h"
 
 #define ALPHA_MIN 0.1
-#define ALPHA_MAX 0.75
+#define ALPHA_MAX 0.8
 #define MOVE_BY_MAX 25
 
 @implementation XNode
@@ -55,6 +55,8 @@
     float randomizedAlpha = ((arc4random() % (int)((ALPHA_MAX - ALPHA_MIN) * 100)) + (ALPHA_MIN * 100.0)) / 100.0;
     NSInteger radius = SIZE_NODE * randomizedAlpha;
     float newScale = randomizedAlpha;
+    
+    //randomizedAlpha = 1.0 - randomizedAlpha;
     
     [self runAction:[SKAction group:@[
                                       [SKAction fadeAlphaTo:randomizedAlpha duration:3.0],
